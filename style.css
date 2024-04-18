@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 1000px;
+    background-color: rgb(243, 214, 160); 
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(./imgs/pexels-dương-nhân-1529881.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .container{
+    color: white;
+    text-align: center;
+    max-width: 900px;
+}
+.home .container h1{
+    font-size: 2.5em;
+}
+.home .container p{
+    color: aliceblue;
+    font-size: 1em;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: rgb(69, 160, 52);
+    text-decoration: none;
+    padding: 10px 30px;
+    letter-spacing: 2xp;
+    transition: 200ms;
+}
+.btn:hover{
+    letter-spacing: 6px;
+    background-color: none;
+    border: 3px rgb(69, 160, 52);
+    background-color: rgba(32, 113, 113, 0.27);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+header.sticky{
+    background: #010a22;
+    padding: 5px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .nav .logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+header .nav .logo .imgBx img{
+    height: 30px;
+}
+header .nav ul {
+    width: 60%;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rebeccapurple; */
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header .nav .logo1{
+    background-color: tomato;
+    width: 5%;
+}
+.containt{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.containt .text{
+    width: 30%;
+    text-align:start;
+    align-self: center;
+}
+/* .containt .img{
+    width: 40%;
+    height: 400px;
+    margin-top: 100px;
+    border: 2px solid white;
+    /* background-color: rebeccapurple; */
+/* }
+.containt .img .firstimg{
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/pexels-ka-kitt-18815938.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.img:hover .firstimg{
+   transform: scale(1.1);
+   
+} */ 
+.img{
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.img .firstimg{
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    transition: transform 0.5s ease;
+    /* overflow: hidden; */
+}
+.img:hover .firstimg{
+    transform: scale(1.1);
+}
+.containt .cards{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.containt .card1{
+    width: 25%;
+    height: 250px;
+    /* border: 2px solid black; */
+}
+.containt .card2{
+    width: 25%;
+    height: 250px;
+   
+}
+.containt .card3{
+    width: 25%;
+    height: 250px;
+    
+}
+.containt .cards .card1 .c1img{
+    width: 100%;
+    height: 35%;
+    
+    background-image: url(./imgs/analysis.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.containt .cards .card2 .c2img{
+    width: 100%;
+    height: 35%;
+    
+    background-image: url(./imgs/analytics.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.containt .cards .card3 .c3img{
+    width: 100%;
+    height: 35%;
+    
+    background-image: url(./imgs/plan.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.services .servicescont1{
+    width: 100%;
+}
+.services .servicescont1 .servicetext{
+    width: 100%;
+    height: 150px;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .servicescont1 .servicetext .text{
+    width: 25%;
+    text-align: center;
+}
+.services .servicescont1 .cards{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.services .servicescont1 .cards .sc1card1{
+    width: 24%;
+    height: 500px;
+    border: 0.5px solid gray;
+    border-radius: 1%;
+    background-color: rgb(241, 216, 174);
+    position: relative;
+}
+.services .servicescont1 .cards .sc1card2{
+    width: 24%;
+    height: 500px;
+    border: 0.5px solid gray;
+    border-radius: 1%;
+    background-color: rgb(241, 216, 174);
+    position: relative;
+}
+.services .servicescont1 .cards .sc1card3{
+    width: 24%;
+    height: 500px;
+    border: 0.5px solid gray;
+    border-radius: 1%;
+    background-color: rgb(241, 216, 174);
+    position: relative;
+}
+.cards .sc1card1 .tea{
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+.cards .sc1card1 .tea .teaimg{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+.cards .sc1card1 .teatext{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    list-style:square;
+    margin-top: 10px;
+}
+
+.cards .sc1card1 .teatext h4 span{
+    color: rgb(23, 125, 112);
+}
+.cards .sc1card1 .teatext .btn{
+    position: absolute;
+    bottom:-15px;
+    left: 34%;
+}
+.cards .sc1card2 .book{
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+.cards .sc1card2 .book .bookimg{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+.cards .sc1card2 .booktext{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    list-style:square;
+    margin-top: 10px;
+}
+.cards .sc1card2 .booktext h4 span{
+    color: rgb(23, 125, 112);
+}
+.cards .sc1card3 .joshtext .btn{
+    position: absolute;
+    bottom:-15px;
+    left: 34%;
+}
+.cards .sc1card2 .booktext .btn{
+    position: absolute;
+    bottom:-15px;
+    left: 34%;
+}
+.cards .sc1card3 .josh .joshimg{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+.cards .sc1card3 .joshtext{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    list-style:square;
+    /* margin-top: 10px; */
+}
+.cards .sc1card3 .joshtext h4 span{
+    color: rgb(23, 125, 112);
+}
+.cards .sc1card3 .joshtext .btn{
+    position: absolute;
+    bottom:-15px;
+    left: 34%;
+}
+.servicescont2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.servicescont2 .c2d1{
+    width: 50%;
+}
+.servicescont2 .c2d1 img{
+    width: 100%;
+}
+.servicescont2 .c2d2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.servicescont2 .c2d2 .c2d2txt{
+    width: 55%;
+}
+.servicescont2 .c2d3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicescont2 .c2d3 .c2d3txt{
+    width: 55%;
+}
+.servicescont2 .c2d3 .c2d3txt a{
+    color: rgb(0, 60, 255);
+    text-decoration: underline;
+}
+.servicescont2 .c2d4{
+    width: 50%;
+    
+}
+.servicescont2 .c2d4 img{
+    width: 100%;
+}
+.servicescont3 {
+    width: 100%;
+    /* margin-top: 100px; */
+}
+.servicescont3 .sc3d1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.servicescont3 .sc3d1 .sc3d1text{
+    width: 40%;
+    text-align: center;
+}
+.servicescont3 .sc3d2 .costreveiw{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.servicescont3 .sc3d2 .costreveiw .rev1{
+    width: 20%;
+    text-align: center;
+} 
+.servicescont3 .sc3d2 .costreveiw .rev1 img{
+    width: 40%;
+    height: 90px;
+    border-radius: 50%;
+} 
+.servicescont3 .sc3d2 .costreveiw .rev2{
+    width: 20%;
+    text-align: center;
+} 
+.servicescont3 .sc3d2 .costreveiw .rev2 img{
+    width: 40%;
+    height: 90px;
+    border-radius: 50%;
+} 
+.servicescont3 .sc3d2 .costreveiw .rev3{
+    width: 20%;
+    text-align: center;
+} 
+.servicescont3 .sc3d2 .costreveiw .rev3 img{
+    width: 40%;
+    height: 90px;
+    border-radius: 50%;
+} 
+.call{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(20, 68, 78);
+    margin-top: 100px;
+    padding-top: 3em;
+}
+.call .fmdetail{
+    width: 23%;
+    color: white;
+}
+.call .fmdetail h5 span{
+    color:rgb(8, 109, 71);
+}
+.call .fm{
+    width: 50%;
+}
+.call .fm .name{
+    width: 60%;
+    height: 3em;
+    background-color: rgba(20, 68, 78, 0.477);
+    border: 1px solid rgba(255, 255, 255, 0.721);
+}
+.call .fm a {
+    text-decoration: underline;
+}
+.call .fm .btn2{
+    padding: 10px 100px;
+    background-color: rgb(61, 221, 33);
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10%;
+    transition: 500ms;
+}
+.call .fm .btn2:hover{
+    letter-spacing: 6px;
+    background-color: none;
+    border: 3px rgb(69, 160, 52);
+    background-color: rgba(32, 113, 113, 0.27);
+}
+@media screen and (max-width: 943px) {
+    header .nav ul {
+        width: 600px;
+    }
+}
+@media screen and (max-width: 755px) {
+    header .nav ul {
+        display: none;
+    }
+    header .nav .logo{
+        margin-left: 75%;
+    }
+}
+@media screen and (max-width: 465px) {
+    .home {
+        background-size: cover;
+        background-position: center;
+        background-image: image-set(max-width 100%);
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1119px) {
+    header .nav ul {
+        width: 800px;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 877px) {
+    header .nav ul {
+        display: none; 
+    }
+   
+}
+ /* 788px max */
+@media screen and (min-width: 876px) {
+    header .sticky .nav .logo{
+        margin-left: 95%;
+    }
+
+}
+@media screen and (max-width: 788px) {
+     .intro .containt{
+        display: flex;
+        flex-direction: column;
+     }
+     .intro .containt .text{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+     }
+     .intro .containt .img{
+        align-self: center;
+     }
+     .intro .containt .cards{
+     display: flex;
+     flex-direction: column;
+     /* justify-content: center; */
+     align-items: center;
+     }
+     .intro .containt .cards .card1{
+        width: 95%;
+     }
+     .intro .containt .cards .card2{
+        width: 95%;
+     }
+     .intro .containt .cards .card3{
+        width: 95%;
+     }
+     .services .servicescont1 .servicetext{
+        width: 100%;
+     }
+     .services .servicescont1 .servicetext .text{
+        width: 100%;
+     }
+     .services .servicescont1 .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+     }
+     .services .servicescont1 .cards .sc1card1{
+        width: 50%;
+        margin-bottom: 50px;
+     }
+     .services .servicescont1 .cards .sc1card2{
+        width: 50%;
+        margin-bottom: 50px;
+     }
+     .services .servicescont1 .cards .sc1card3{
+        width: 50%;
+        margin-bottom: 50px;
+     }
+}
+@media screen and (max-width: 876px) {
+   .servicescont2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .servicescont2 .c2d1{
+        width: 90%;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .servicescont2 .c2d2{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .servicescont2 .c2d2 .c2d2txt{
+        width: 90%;
+    }
+    .servicescont2 .c2d3{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .servicescont2 .c2d3 .c2d3txt{
+        width: 90%;
+    }
+    .servicescont2 .c2d4{
+        width: 90%;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .servicescont3 .sc3d2 .costreveiw{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicescont3 .sc3d2 .costreveiw .rev1{
+        margin-bottom: 50px;
+    }
+    .servicescont3 .sc3d2 .costreveiw .rev2{
+        margin-bottom: 50px;
+    }
+    .servicescont3 .sc3d2 .costreveiw .rev3{
+        margin-bottom: 50px;
+    }
+}
